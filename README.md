@@ -26,3 +26,5 @@ int isRegularFile(const char *path) {
 ```
 
 Feel free to create a Pull Request and I'll merge it in.
+
+* Also, this tool allocates a total of 1K of memory for a complete file path (on the stack).  If more is needed, simply change ``` #define MAX_FILE_SIZE ```
